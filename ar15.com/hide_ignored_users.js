@@ -16,13 +16,13 @@ $('div[class*=forumTable][class!=forumTableDarkNews][class!=forumTableLightNews]
     var e = $(elem);
     if (idx % 2 == 0) {
         if (e.hasClass('forumTableLight')) {
-            $(elem).removeClass('forumTableLight');
-            $(elem).addClass('forumTableDark');
+            e.removeClass('forumTableLight');
+            e.addClass('forumTableDark');
         }
     } else {
         if (e.hasClass('forumTableDark')) {
-            $(elem).removeClass('forumTableDark');
-            $(elem).addClass('forumTableLight');
+            e.removeClass('forumTableDark');
+            e.addClass('forumTableLight');
         }
     }
 });
